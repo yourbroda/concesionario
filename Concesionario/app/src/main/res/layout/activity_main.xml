@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:id="@+id/tvBienvenido"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tvBienvenido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propietarios"
+            android:id="@+id/rbPropietarios"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coches"
+            android:id="@+id/rbCoches"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altas"
+        android:id="@+id/btAltas"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvBienvenido"
+        android:layout_toStartOf="@+id/tvBienvenido"
+        android:onClick="alta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bajas"
+        android:id="@+id/btBajas"
+        android:layout_alignTop="@+id/btAltas"
+        android:layout_toRightOf="@+id/btAltas"
+        android:layout_toEndOf="@+id/btAltas"
+        android:onClick="baja" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:id="@+id/btModificar"
+        android:layout_below="@+id/btAltas"
+        android:layout_alignRight="@+id/tvBienvenido"
+        android:layout_alignEnd="@+id/tvBienvenido"
+        android:onClick="modificar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultas"
+        android:id="@+id/btConsultas"
+        android:layout_alignTop="@+id/btModificar"
+        android:layout_toRightOf="@+id/btModificar"
+        android:layout_toEndOf="@+id/btModificar"
+        android:onClick="consulta" />
+</RelativeLayout>

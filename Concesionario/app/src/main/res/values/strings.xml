@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Concesionario</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_al_ba_mo">AlBaMo</string>
+    <string name="title_activity_alta_coche">altaCoche</string>
+    <string name="title_activity_consultas">Consultas</string>
+</resources>
